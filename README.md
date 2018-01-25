@@ -1,3 +1,5 @@
+学习专用
+
 # vue-demo-cnodejs
 
 > A Vue.js project
