@@ -1,0 +1,8 @@
+.box { margin: 50px; }
+
+.menu { width: 100px; height: 100px; position: relative; }
+.menu:before, .menu:after { content: ""; display: block; width: 100px; height: 16px; background: #000; border-radius: 8px; position: absolute; left: 0; -webkit-transition: all 0.15s ease-in-out; transition: all 0.15s ease-in-out; }
+.menu:before { top: 5px; box-shadow: 0 37px #000; }
+.menu:after { bottom: 5px; }
+.menu:hover:before { top: 42px; box-shadow: none; -webkit-transform: rotate(225deg); transform: rotate(225deg); }
+.menu:hover:after { bottom: 42px; -webkit-transform: rotate(135deg); transform: rotate(135deg); }

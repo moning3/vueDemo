@@ -1,6 +1,9 @@
 <template>
   <div>
     <Header></Header>
+    <div class="box">
+     <div class="menu"></div>
+    </div>
     <div class="article_list">
       <ul>
         <li v-for="i in list" :key="i.id">
@@ -15,24 +18,24 @@
   </div>
 </template>
 <script>
-import Header from '../components/header.vue'
-import Footer from '../components/footer.vue'
+import Header from "../components/header.vue";
+import Footer from "../components/footer.vue";
 export default {
   components: { Header, Footer },
-  data () {
+  data() {
     return {
       list: []
-    }
+    };
   },
-  created () {
-    this.getData()
+  created() {
+    this.getData();
   },
   methods: {
-    getData () {
-      this.$api.get('topics', null, r => {
-        this.list = r.data
-      })
+    getData() {
+      this.$api.get("topics", null, r => {
+        this.list = r.data;
+      });
     }
   }
-}
+};
 </script>

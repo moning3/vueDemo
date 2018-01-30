@@ -6,6 +6,12 @@ import router from './router'
 import api from './api/index.js'
 import utils from './utils/index.js'
 
+// 配置百度编辑器
+import '../static/ue/ueditor.config.js'
+import '../static/ue/ueditor.all.min.js'
+import '../static/ue/lang/zh-cn/zh-cn.js'
+import '../static/ue/ueditor.parse.min.js'
+
 Vue.prototype.$api = api
 Vue.prototype.$utils = utils
 // 将API方法绑定到全局
